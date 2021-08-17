@@ -1,0 +1,105 @@
+.Joke {
+    display: flex;
+    border-bottom: 1px solid black;
+    align-items: center;
+    justify-content: center;
+    font-weight: 400;
+    font-family: monospace;
+    padding: 1rem;
+}
+
+
+
+.Joke:hover {
+   background-color: rgba(128, 128, 128, 0.233);
+   box-shadow: 5px 5px 15px 5px #000000;
+}
+
+
+.Joke-buttons {
+    display: flex;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    font-family: monospace;
+}
+
+.Joke-text{
+    width: 80%;
+    font-size: 1rem;
+}
+
+
+
+#Joke-votes{
+    text-align: center;
+    font-size: 15px;
+    font-weight: 800;
+    width: 50px;
+    height: 50px;
+    margin-top: 5px;
+    padding-top: 5px;
+    text-align: center;
+    align-items: center;
+    align-self: center;
+    justify-content: center;
+}
+
+.fa-thumbs-up, .fa-thumbs-down{
+    font-size: 2em;
+    margin: 10px;
+    cursor: pointer;
+    transition: all 0.2s;
+}    
+
+.fa-thumbs-up:hover {
+    color: #6a994e;
+    animation-name: move-up;
+    animation-duration: 0.7s;
+    animation-timing-function: ease-out;
+}
+
+.fa-thumbs-down:hover{
+    color: #bc4749;
+    animation-name: move-down;
+    animation-duration: 0.7s;
+    animation-timing-function: ease-out;
+    
+}
+
+@keyframes move-up {
+    0%,
+    50%,
+    100% {
+        transform: translateY(0);
+    }
+    25%,
+    75% {
+        transform: translateY(-3px);
+    }
+}
+
+@keyframes move-down {
+    0%,
+    50%,
+    100% {
+        transform: translateY(0);
+    }
+    25%,
+    75% {
+        transform: translateY(3px);
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .Joke {
+      flex-direction: column;
+      text-align: center;
+
+    }
+    .Joke-buttons {
+        font-size: 10px;
+    }
+  }

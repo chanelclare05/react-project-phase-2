@@ -1,0 +1,12 @@
+.App {
+  font-family: monospace;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;  
+  background-color: #3a86ff;
+  opacity: 0.8;
+  background: linear-gradient(135deg, #ffbe0b55 25%, transparent 25%) -10px 0/ 20px 20px, linear-gradient(225deg, #ffbe0b 25%, transparent 25%) -10px 0/ 20px 20px, linear-gradient(315deg, #ffbe0b55 25%, transparent 25%) 0px 0/ 20px 20px, linear-gradient(45deg, #ffbe0b 25%, #3a86ff 25%) 0px 0/ 20px 20px;
+
+}
+
