@@ -11,13 +11,14 @@
     font-family: Georgia, 'Times New Roman', Times, serif;
     float: left;
     display: block;
-    color: #3a86ff;
+    color: #1967f8;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
   }
   
   .Navbar .Navbar-active {
-    color: #ff3ad48c;
-    border-bottom: 2px solid #ff3ad48c;
+    color: #1967f8;
+    font-weight: 800;
+    border-bottom: 2px solid #1967f8;
   }
