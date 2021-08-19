@@ -5,7 +5,7 @@ class Error404 extends Component {
 
     pageRedirect(){
             setTimeout(function(){
-                window.location = "/";
+                window.location = "/react-project-phase-2/";
         },5000);    
     }
 
