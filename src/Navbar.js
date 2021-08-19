@@ -11,9 +11,9 @@ class Navbar extends Component {
     render(){
         return (
             <div className='Navbar'>
-                <NavLink exact activeClassName="Navbar-active" to="/">Home</NavLink>
-                <NavLink exact activeClassName="Navbar-active" to="/joke-list"> Dad Jokes</NavLink>
-                <NavLink exact activeClassName="Navbar-active" to="/news-list"> News List</NavLink>
+                <NavLink exact activeClassName="Navbar-active" to="/react-project-phase-2/">Home</NavLink>
+                <NavLink exact activeClassName="Navbar-active" to="/react-project-phase-2/joke-list"> Dad Jokes</NavLink>
+                <NavLink exact activeClassName="Navbar-active" to="/react-project-phase-2/news-list"> News List</NavLink>
             </div>
         )
     }
