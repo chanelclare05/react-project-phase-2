@@ -5,7 +5,7 @@ import {Route, Switch} from 'react-router-dom';
 import Home from './Home'
 import Navbar from './Navbar'
 import Error404 from './Error404'
-import NewsList from './NewsList'
+// import NewsList from './NewsList'
 
 class App extends Component {
   render(){
@@ -15,7 +15,7 @@ class App extends Component {
         <Switch>
           <Route exact path="/react-project-phase-2/" component={Home}/> 
           <Route exact path="/react-project-phase-2/joke-list" component={JokeList}/> 
-          <Route exact path="/react-project-phase-2/news" component={NewsList}/> 
+          {/* <Route exact path="/react-project-phase-2/news-list" component={NewsList}/>  */}
           <Route component={Error404} /> 
         </Switch>
 

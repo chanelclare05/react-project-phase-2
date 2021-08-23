@@ -46,11 +46,11 @@ class JokeList extends Component {
         console.log(sortedJokes)
     }
 
-    handleVote(id, delta) {
+    handleVote(id, change) {
         this.setState(oldState => 
             ({
                 jokes: oldState.jokes.map(j =>
-                    j.id === id ? {...j, votes: j.votes+delta} : j
+                    j.id === id ? {...j, votes: j.votes+change} : j
                 )
             }), 
         () => window.localStorage.setItem("jokes", JSON.stringify(this.state.jokes))
